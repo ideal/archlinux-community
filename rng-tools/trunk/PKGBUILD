@@ -9,6 +9,7 @@ arch=('x86_64')
 url="https://github.com/nhorman/rng-tools"
 license=('GPL')
 depends=('libgcrypt' 'curl' 'libxml2' 'sysfsutils' 'jitterentropy' 'libp11')
+optdepends=("opensc: for PKCS#11 tokens support")
 backup=(etc/conf.d/rngd)
 source=(https://github.com/nhorman/rng-tools/archive/v$pkgver/$pkgname-$pkgver.tar.gz
         rngd.conf
